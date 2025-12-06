@@ -1,14 +1,14 @@
 {
-  "name": "nodebrawl-core",
-  "version": "2.3.1",
-  "description": "The world's first open source Brawl Stars private server core written on JavaScript.",
+  "name": "astralclash",
+  "version": "1.0.0",
+  "description": "The first Node.js Clash of Clans server for 9.256.x",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "tailsjs",
-  "license": "ISC",
+  "author": "Greedycell",
+  "license": "GPL-3.0",
   "dependencies": {
     "crypto": "^1.0.1",
     "figlet": "^1.9.4",
