@@ -50,19 +50,23 @@ server.on('connection', async (client) => {
     
     message.payload = await client.crypto.decrypt(message.payload)
 
-    if (packets.indexOf(String(message.id)) !== -1) {
-      try {
-        const packet = new (Messages.handle(message.id))(message.payload, client)
+    if (message.id != 10099) {
+      if (packets.indexOf(String(message.id)) !== -1) {
+        try {
+          const packet = new (Messages.handle(message.id))(message.payload, client)
 
-        console.log(`[*] >> Gotcha ${message.id} (${packet.constructor.name}) packet! `)
+          if (message.id != 18245) { // if packet is 18245 then dont send this gotcha log
+            console.log(`[*] >> Gotcha ${message.id} (${packet.constructor.name}) packet!`)
+          }
 
-        await packet.decode()
-        await packet.process()
-      } catch (e) {
-        console.log(e)
+          await packet.decode()
+          await packet.process()
+        } catch (e) {
+          console.log(e)
+        }
+      } else {
+        console.log(`[*] >> Gotcha undefined ${message.id} packet!`)
       }
-    } else {
-      console.log(`[*] >> Gotcha undefined ${message.id} packet!`)
     }
   })
 
