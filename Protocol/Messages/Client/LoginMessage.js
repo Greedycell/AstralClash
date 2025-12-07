@@ -2,6 +2,7 @@ const PiranhaMessage = require('../../PiranhaMessage')
 const LoginOkMessage = require('../Server/LoginOkMessage')
 const LoginFailedMessage = require('../Server/LoginFailedMessage')
 const OwnHomeDataMessage = require('../Server/OwnHomeDataMessage')
+const AvatarStreamMessage = require('../Server/Avatar/AvatarStreamMessage')
 const OutOfSyncMessage = require('../Server/OutOfSyncMessage')
 const DisconnectedMessage = require('../Server/DisconnectedMessage')
 const ServerErrorMessage = require('../Server/ServerErrorMessage')
@@ -62,6 +63,7 @@ class LoginMessage extends PiranhaMessage {
 
     new LoginOkMessage(this.client, this.player).send()
     new OwnHomeDataMessage(this.client, this.player).send()
+    new AvatarStreamMessage(this.client, this.player).send()
   }
 }
 
