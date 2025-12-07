@@ -6,7 +6,7 @@ class RequestVisitedHomeMessage extends PiranhaMessage {
     super(bytes)
     this.client = client
     this.player = player
-    this.id = 19860
+    this.id = 14113
     this.version = 0
   }
 
