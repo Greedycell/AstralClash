@@ -20,9 +20,9 @@ class LoginMessage extends PiranhaMessage {
     this.highID = this.readInt()[0]
     this.lowID = this.readInt()[1]
     this.token = this.readString()
-    this.majorV = this.readVInt()
-    this.minorV = this.readVInt()
-    this.build = this.readVInt()
+    this.majorV = this.readInt()
+    this.minorV = this.readInt()
+    this.build = this.readInt()
     this.resourceSHA = this.readString()
     this.uuid = this.readString()
     this.openUUID = this.readString()
@@ -39,16 +39,16 @@ class LoginMessage extends PiranhaMessage {
     this.advertisingEnabled = this.readBoolean()
     this.advertisingID = this.readString()
     this.scramblerSeed = this.readInt()
-    this.appStore = this.readVInt()
+    this.appStore = this.readInt()
     this.readDataReference()
     this.readDataReference()
-    this.appVersion = this.readVInt()
+    this.appVersion = this.readInt()
     this.readDataReference()
     this.readDataReference()
     this.readDataReference()
     this.readDataReference()
     this.readDataReference()
-    this.readVInt()
+    this.readInt()
   }
 
   async process () {
@@ -66,5 +66,6 @@ class LoginMessage extends PiranhaMessage {
     new AvatarStreamMessage(this.client, this.player).send()
   }
 }
+
 
 module.exports = LoginMessage
