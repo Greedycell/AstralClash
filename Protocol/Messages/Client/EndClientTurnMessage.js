@@ -48,11 +48,11 @@ class EndClientTurnMessage extends PiranhaMessage {
 
         if(commands.indexOf(String(this.commandID)) != -1){
             const command = new (Commands.handle(this.commandID))(this.bytes.slice(this.offset), this.client, this.player)
-            this.client.log(`[*] >> Command ${this.commandID} (${command.constructor.name}) handled!`)
+            console.log(`[*] >> Command ${this.commandID} (${command.constructor.name}) handled!`)
             command.decode(this)
             await command.process()
         }else if(this.commandID > 499){
-            this.client.log(`[*] >> Command ${this.commandID} isn't handled!`)
+            console.log(`[*] >> Command ${this.commandID} isn't handled!`)
         }
     }
   }
