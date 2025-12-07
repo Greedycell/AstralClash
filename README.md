@@ -3,7 +3,7 @@
 [![clash of clans](https://img.shields.io/badge/Clash%20of%20Clans-9.256.x-brightred.svg?style=flat")](https://github.com/Greedycell/AstralClash/releases/tag/Clients)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# Warning: This version is not ready to run in a production environment.
+# Warning: This server is not ready to run in a production environment.
 
 ##### Need help? Join our [Discord](https://discord.gg/mUredE6CTU)
 #### Want to help us? Fork this project and try adding something!
@@ -33,3 +33,4 @@ Ask for help in my [Discord server](https://discord.gg/mUredE6CTU) or open an is
 
 
 ## Core by [tailjs](https://github.com/tailsjs/nodebrawl-core)
+
