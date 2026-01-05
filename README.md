@@ -1,4 +1,4 @@
-# <p align="center">AstralClash</p>
+# <p align="center">AstralClash (COMING SOON)</p>
 # <p align="center">The first Node.js Clash of Clans server for 9.256.x</p>
 [![clash of clans](https://img.shields.io/badge/Clash%20of%20Clans-9.256.x-brightred.svg?style=flat")](https://github.com/Greedycell/AstralClash/releases/tag/Clients)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -33,4 +33,5 @@ Ask for help in my [Discord server](https://discord.gg/mUredE6CTU) or open an is
 
 
 ## Core by [tailjs](https://github.com/tailsjs/nodebrawl-core)
+
 
